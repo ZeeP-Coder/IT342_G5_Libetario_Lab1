@@ -35,18 +35,20 @@ function Profile() {
       {/* Navigation Bar */}
       <nav className="profile-navbar">
         <div className="navbar-brand">
-          <span className="navbar-brand-icon">👤</span>
+          <svg className="navbar-brand-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor">
+            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z" />
+          </svg>
           <h1 className="profile-navbar-title">My Profile</h1>
         </div>
         <div className="navbar-menu">
           <button
-            className="nav-button"
+            className="back-button"
             onClick={() => navigate("/dashboard")}
           >
-            Dashboard
-          </button>
-          <button className="nav-button logout" onClick={handleLogout}>
-            Logout
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor">
+              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 19l-7-7 7-7" />
+            </svg>
+            Back
           </button>
         </div>
       </nav>

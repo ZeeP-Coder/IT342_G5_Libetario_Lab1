@@ -9,7 +9,7 @@
 - authentication
 
 ## IN-PROGRESS
+- Documentation update
 
 ## TODO
 - Mobile application
-- Documentation update

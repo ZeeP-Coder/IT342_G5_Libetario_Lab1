@@ -37,19 +37,34 @@
   }
 }
 
-.hero-icon {
-  font-size: 4rem;
-  margin-bottom: 1rem;
-  animation: bounce 2s infinite;
+.hero-icon-wrapper {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 120px;
+  height: 120px;
+  background: rgba(255, 255, 255, 0.2);
+  border-radius: 50%;
+  margin-bottom: 1.5rem;
+  backdrop-filter: blur(10px);
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.2);
+  animation: float 3s ease-in-out infinite;
 }
 
-@keyframes bounce {
+@keyframes float {
   0%, 100% {
     transform: translateY(0);
   }
   50% {
     transform: translateY(-10px);
   }
+}
+
+.hero-icon {
+  width: 64px;
+  height: 64px;
+  color: white;
+  stroke-width: 1.5;
 }
 
 .home-hero h1 {
@@ -107,9 +122,28 @@
   animation-delay: 0.2s;
 }
 
+.card-icon-wrapper {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 80px;
+  height: 80px;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  border-radius: 50%;
+  margin-bottom: 1.5rem;
+  box-shadow: 0 4px 16px rgba(102, 126, 234, 0.3);
+}
+
+.register-card .card-icon-wrapper {
+  background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);
+  box-shadow: 0 4px 16px rgba(245, 87, 108, 0.3);
+}
+
 .card-icon {
-  font-size: 3rem;
-  margin-bottom: 1rem;
+  width: 40px;
+  height: 40px;
+  color: white;
+  stroke-width: 2;
 }
 
 .auth-card h2 {
@@ -194,6 +228,16 @@
   font-size: 1rem;
   padding: 0.5rem 0;
   text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+}
+
+.feature-bullet {
+  color: #f5576c;
+  font-size: 1.5rem;
+  font-weight: bold;
 }
 
 .home-footer {
